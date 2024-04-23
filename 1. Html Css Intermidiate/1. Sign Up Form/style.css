@@ -1,3 +1,62 @@
-p{
-    color: red;
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Norse-Bold";
+    src: url(./Norse-Bold.otf);
+}
+
+.content{
+    width: 100vw;
+    height: 100vh;
+}
+
+.content,
+.logo{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+
+.left{
+    background-image: url(./images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 40vw;
+}
+
+.logo{
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: relative;
+    top: 20vh;
+    gap: 1vw;
+    padding: 15px 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-odin{
+    color: white;
+    font-size: 5rem;
+    font-family: "Norse-Bold";
+
+}
+.odin{
+    height: 20vh;
+}
+
+.credit{
+    color: white;
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+}
+
+.right{
+    background-color: blue;
 }
